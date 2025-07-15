@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --wide-size: 95rem;
+    --highlight-color: rgb(51, 207, 116);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.6rem;
+    width: 92%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.logo-left {
+    height: 5rem;
+    width: 12rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.datahouse.ch/wp-content/uploads/logo_datahouse.svg");
+    cursor: pointer;
+}
+
+.opts-mid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.opts-mid button {
+    background-color: transparent;
+    color: white;
+    height: 5rem;
+    padding: 0 1rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.opts-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.opts-right button:nth-of-type(1) {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.opts-right button:nth-of-type(1) i {
+    margin-left: 0.5rem;
+}
+
+.opts-right button:nth-of-type(2) {
+    background-color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.opts-right button:nth-of-type(1):hover {
+    color: var(--highlight-color);
+}
+
+.opts-mid button:hover,
+.opts-right button:nth-of-type(2):hover {
+    background-color: var(--highlight-color);
+}
+
+.opts-right button:nth-of-type(3) {
+    display: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+
+/* Small devices: Smartphones 767px */
+@media (max-width: 767.98px) {
+    .logo-left {
+        width: 9rem;
+    }
+
+    .opts-mid {
+        display: none;
+    }
+
+    .opts-right button:nth-of-type(2) {
+        display: none;
+    }
+
+    .opts-right button:nth-of-type(3) {
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1010px) {
+    .opts-mid {
+        display: none;
+    }
+}
+
+/* Extra extra large devices: Large desktops (1450px and above) */
+@media (min-width: 1450px) {
+    nav {
+        width: var(--wide-size);
+        margin: 0 auto;
+    }
+
+    .opts-mid {
+        display: flex;
+    }
+}

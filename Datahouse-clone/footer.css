@@ -1,0 +1,109 @@
+:root {
+    --wide-size: 95rem;
+    --highlight-color: rgb(51, 207, 116);
+}
+
+
+footer {
+    width: 100vw;
+    color: black;
+    background-color: white;
+    padding: 0 2rem;
+}
+
+.upper-foot,
+.lower-foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.lower-foot {
+    height: 10rem;
+    padding: 5rem 0;
+}
+
+.solutions,
+.company,
+.in-touch,
+.upper-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.solutions p,
+.company p,
+.in-touch p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.solutions a,
+.company a,
+.in-touch a {
+    text-decoration: none;
+    color: black;
+}
+
+.solutions a:hover,
+.company a:hover,
+.in-touch a:hover,
+.in-touch i:hover {
+    color: var(--highlight-color);
+}
+
+.in-touch i {
+    font-size: 1.2rem;
+}
+
+.upper-logo img,
+.upper-logo svg {
+    height: auto;
+    width: 12rem;
+    cursor: pointer;
+}
+
+.lower-foot svg {
+    height: auto;
+    width: 8rem;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.copy-right,
+.legel-notice {
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+
+    footer {
+        height: 80rem;
+    }
+
+    .upper-foot,
+    .lower-foot {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .solutions,
+    .company,
+    .in-touch,
+    .upper-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+/* Extra extra large devices: Large desktops (1450px and above) */
+@media (min-width: 1450px) {
+    footer {
+        padding: 0 12rem;
+    }
+}

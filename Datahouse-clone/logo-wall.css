@@ -1,0 +1,50 @@
+.logo-wall {
+   width: 100%;
+   display: grid;
+   background-color: transparent;
+   justify-items: center;
+   align-items: center;
+}
+
+.logo-wall img {
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+
+/* Mobile phones (small screens) */
+@media (max-width: 767.98px) {
+   .logo-wall {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5rem;
+   }
+
+   .logo-wall img {
+      width: 8rem;
+   }
+}
+
+/* Tablets (medium screens) */
+@media (min-width: 768px) and (max-width: 1009.98px) {
+   .logo-wall {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5rem;
+   }
+
+   .logo-wall img {
+      width: 8rem;
+   }
+}
+
+/* Default (large screens >= 1010px) */
+@media (min-width: 1010px) {
+   .logo-wall {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5rem;
+   }
+
+   .logo-wall img {
+      width: 8rem;
+   }
+}
