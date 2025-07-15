@@ -21,16 +21,6 @@ Project Structure
 - footer.css       : Styles for the footer including layout and responsiveness.
 - script.js        : JavaScript file handles the background overlay opacity effect on scroll.
 
-Features
---------
-- Fixed header with logo, navigation buttons, and call-to-action elements.
-- Responsive logo wall using CSS Grid (2–4 logos per row depending on screen size).
-- Footer with multiple columns for company info, links, and social icons.
-- Fully responsive design using media queries, Flexbox, and Grid.
-- Modern styling with Google Fonts (Montserrat).
-- Hover effects and dynamic adjustments for different screen sizes.
-- Customizable CSS variables for colors and layout width.
-
 Technologies Used
 -----------------
 - HTML5
